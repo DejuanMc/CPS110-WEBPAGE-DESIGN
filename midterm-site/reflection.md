@@ -1,0 +1,12 @@
+## Reflection
+
+1. What broke when you moved files, and how did you find it?
+2. When did you choose relative vs. root-relative paths, and why?
+3. What is one risk of displaying an image from someone else's server?
+4. If you used AI: name one thing it did well and one thing you had to correct. If you built it by hand: name one thing you would structure differently from the start, now that you've reorganized it.
+
+Well, after pushing my first commit I had trouble sorting the files into folders in the hierarchy. I could move the files into the order I wanted, so instead, I created the files from ascending order. I then had trouble putting the files into these folders because the css had no longer worked. By going through all of the files, I noticed that the paths I had originally made had no longer correlated. So, I had to manually repath all of the links and sources. Now that that was over, I checked to see if it had worked now, but it didn't. I spent six minutes starting at text to understand what I did wrong. Realizing I had set the paths wrong, I spend more time repathing again so that the index.html in my midterm-site folder would not take me to the index.html in my suny_website folder.
+
+I chose to use relative paths for most of the links I made, but then realized that I would need to define more after the first commit. Many of the paths would have issues finding where things are because there are multiple files with similar names. Then with the images I had and the images I used, most of the images I had in my images folder weren't used. I found it more convenient to use the images I had uploaded from YouTube or other sites that I had used images before on. Though, a risk with using images from another server is that they can be altered on their server, and that would change the images on mine as well.
+
+Finally, one thing the AI did well when I asked it to assist me during the first commit was to decorate the website using the empty css file. It did a good job with not messing up any other file outside of the midterm-site folder. I am very thankful for that because it would be a serious pain if every file was altered because of the prompt I had used. One thing I did have to correct however, was in fact the paths again because of how I sorted them after.
