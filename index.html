@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+
+    <style>
+        .header {
+            background-color: #231a27;
+            padding: 20px;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        /*
+        element.class#id:psuedo-class::pseudo-element {
+        
+        }
+        */
+
+        .main-list {
+            list-style-type: none;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #1d1757;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(117, 48, 110, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        .main-list li {
+            flex: 1 1 32%;
+        }
+
+        .main-list li a {
+            text-decoration: none;
+        }
+
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +47,16 @@
 <body>
     <div id="main">
         <section class="header">
-
+            <h1>Project Gallery</h1>
         </section>
         <section class="content">
-            <ul>
+            <ul class="main-list">
                 <li>
                     <a href="suny_website/">My SUNY New Paltz Site</a>
                 </li>
-                <li></li>
+                <li>
+                    <a href="midterm-site/">Midterm Site</a>
+                </li>
                 <li></li>
                 <li></li>
                 <li></li>
