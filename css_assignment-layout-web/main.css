@@ -1,0 +1,114 @@
+.header-title {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #231a27;
+    border: 3px solid rgb(105, 0, 123);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a27;
+}
+
+nav {
+    background-color: #231a27;
+}
+
+nav ul {
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 0rem;
+    padding: 0.5rem;
+    border: 3px solid rgb(105, 0, 123);
+    text-align: center;
+    flex: auto;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div a:hover {
+  background-color: #fafa03;
+  color: rgb(0, 0, 0);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #231a27;
+    color: #fff;
+    border: 3px solid rgb(105, 0, 123);
+}
+
+div.flex-container > div {
+  margin: 10px;
+  flex: 1;
+}
+
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
+ul.music-genres-list {
+    margin: 50px;
+}
+
+ul.proof {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+ul.music-genres-list li {
+    margin-bottom: 30px;
+}
+
+ul.apples-list {
+    margin-top: 30px;
+}
+
+ul.orange-list {
+    margin-top: 30px;
+} 
+
+ul.orange-list li {
+    margin-bottom: 30px;
+}
+
+ul.apples-list li {
+    margin-bottom: 30px;
+}
+
+.back-to-top {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #231a27;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border: 3px solid rgb(105, 0, 123);
+}

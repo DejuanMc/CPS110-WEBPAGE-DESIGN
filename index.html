@@ -19,6 +19,8 @@
         
         }
         */
+        .main-list {  
+        }
 
         .main-list {
             list-style-type: none;
@@ -32,10 +34,29 @@
 
         .main-list li {
             flex: 1 1 32%;
+            list-style-type: none;
+            margin: 10px;
+            padding: 10px;
+            background-color: #1d1757;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(117, 48, 110, 0.1);
+            border: 1px solid #ddd;
         }
 
         .main-list li a {
             text-decoration: none;
+        }
+
+        li.highlighted {
+            background-color: #ffd68a;
+            color: #0c0094;
+            border: 1px solid #00093d;
+        }
+
+        #back-to-top {
+            display: block;
+            text-align: center;
+            margin-bottom: 50px;
         }
 
     </style>
@@ -46,10 +67,10 @@
 </head>
 <body>
     <div id="main">
-        <section class="header">
+        <section class="header" id="top">
             <h1>Project Gallery</h1>
         </section>
-        <section class="content">
+        <section class="content container">
             <ul class="main-list">
                 <li>
                     <a href="suny_website/">My SUNY New Paltz Site</a>
@@ -57,11 +78,59 @@
                 <li>
                     <a href="midterm-site/">Midterm Site</a>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="#div10">important stuff at the end of the page</a>
+                </li>
+                <li class="highlighted">
+                    <a href="https://foxupai.itch.io/">Special Text</a>
+
+                </li>
+                <li>
+                    <a href="layout_website/">Layout Website Page</a>
+                </li>
+                <li>
+                    <a href="css_assignment-layout-web/">CSS Assignment Layout Web</a>
+                </li>
             </ul>
+
+            <img src="suny_website/images/fall-open-house.webp"
+                alt="SUNY New Paltz Fall Open House"
+                style="width: 20em; height: 10em;"
+            >
+
         </section>
+        <br><br>
+        <div>
+            <h2>Div 1</h2>
+        </div>
+        <div>
+            <h2>Div 2</h2>
+        </div>
+        <div>
+            <h2>Div 3</h2>
+        </div>
+        <div>
+            <h2>Div 4</h2>
+        </div>
+        <div>
+            <h2>Div 5</h2>
+        </div>
+        <div>
+            <h2>Div 6</h2>
+        </div>
+        <div>
+            <h2>Div 7</h2>
+        </div>
+        <div>
+            <h2>Div 8</h2>
+        </div>
+        <div>
+            <h2>Div 9</h2>
+        </div>
+        <div id="div10">
+            <h2>Div 10</h2>
+        </div>
+        <a id="back-to-top" href="#top">Back to Top</a>
     </div>
 </body>
 </html>

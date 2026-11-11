@@ -1,0 +1,80 @@
+/* Hi!
+*/
+nav {
+    background-color: #49ff83;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+.special-paragraph {
+    padding: 2rem;
+    background-color: #49ff83;
+}
+
+.highlighted {
+    width: 50%;
+    background-color: #ff4949;
+}
+
+.more span {
+    position: relative;
+}
+
+.more-text {
+    display: none;
+}
+
+.more:focus-within .more-text {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.diagram {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+
+    background-color: #ffc72c;
+
+    float: left;
+    width: 30%;
+}
+
+.floating {
+    position: absolute;
+    top: 290px;
+    right: 20px;
+
+    width: 100px;
+    border: 2px solid black;
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #ff4949;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 95%;
+    border: 2px solid black;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #ff4949;
+    z-index: 2;
+}
