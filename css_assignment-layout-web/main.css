@@ -1,41 +1,54 @@
-.header-title {
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: -.5em auto;
+    width: 1000px;
+}
+
+header, main, footer{
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: .5em;
+    margin: .5em;
     background-color: #231a27;
     border: 3px solid rgb(105, 0, 123);
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1a1a27;
+main {
+    flex: 1;
 }
 
-nav {
-    background-color: #231a27;
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav ul {
     display: flex;
-    flex-direction:row;
     list-style-type: none;
     padding: 0;
-    
+    margin: 0 .5em;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 0rem;
-    padding: 0.5rem;
-    border: 3px solid rgb(105, 0, 123);
+nav li {
+    padding: .5em;
+    flex: 1;
+    background-color: #4f365a;
     text-align: center;
-    flex: auto;
 }
 
-nav ul li a {
+nav li:hover {
+    background-color: #fafa03;
+    color: #000000;
+}
+
+nav a {
     color: #fff;
     text-decoration: none;
+    padding: .5em;
+}
+
+.nav-title {
+    display: none;
 }
 
 div a:hover {
@@ -48,54 +61,35 @@ a {
     text-decoration: none;
 }
 
-div.flex-container {
+.columns {
     display: flex;
-    flex-direction: row;
-    background-color: #231a27;
     color: #fff;
-    border: 3px solid rgb(105, 0, 123);
+    gap: .5em;
+    min-height: 200px;
 }
 
-div.flex-container > div {
-  margin: 10px;
-  flex: 1;
+@media (max-width: 1080px) {
+    .container {
+        width: 600px;
+    }
 }
 
-@media screen and (max-width:600px) {
-  div.flex-container {
-    flex-direction: column;
-  }
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    nav ul, .columns {
+        flex-direction: column;
+    }
 }
 
-ul.music-genres-list {
-    margin: 50px;
+.column {
+    padding: .5em;
+    background-color: #231a27;
 }
 
-ul.proof {
-    list-style-type: none;
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-}
-
-ul.music-genres-list li {
-    margin-bottom: 30px;
-}
-
-ul.apples-list {
-    margin-top: 30px;
-}
-
-ul.orange-list {
-    margin-top: 30px;
-} 
-
-ul.orange-list li {
-    margin-bottom: 30px;
-}
-
-ul.apples-list li {
-    margin-bottom: 30px;
+.column-expand {
+    flex: 1;
 }
 
 .back-to-top {
@@ -104,11 +98,14 @@ ul.apples-list li {
     margin-top: 20px;
 }
 
-footer {
-    background-color: #231a27;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-    border: 3px solid rgb(105, 0, 123);
+.apples-list li {
+    list-style-type: none;
+    margin: 1em;
+    padding: 0;
+}
+
+.orange-list li {
+    list-style-type: none;
+    margin: 1em;
+    padding: 0;
 }
